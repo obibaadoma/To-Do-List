@@ -81,18 +81,7 @@ window.onload = () => {
       });
 
       const delBtn = newListElement.querySelector('.delete-btn');
-      // editInput.addEventListener('keypress', (e) => {
-      //   if (e.key === 'Enter') {
-      //     e.preventDefault();
-      //     toBeEdited.innerHTML = editInput.value;
-      //     toBeEdited.classList.remove('hidden');
-      //     editBtn.classList.add('hidden');
-      //     delBtn.classList.remove('hidden');
-      //     editInput.classList.add('hidden');
-      //     listArray[i].description = editInput.value;
-      //     localStorage.setItem('listsKey', JSON.stringify(listArray[i]));
-      //   }
-      // });
+ 
 
       // Remove task from the list
       delBtn.addEventListener('click', (e) => {
