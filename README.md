@@ -6,7 +6,7 @@
 
 This is the second project in the second module in the **Microverse** program.
 <br/>
-Check the below contents for further details about this project.
+Check the below contents for further details about this project...
 
 <!-- CONTENTS -->
 
