@@ -33,7 +33,7 @@ This project is about building a book management app. It contains three main fil
 It also includes some config linters for (`HTML` / `CSS3` / `JavaScript`) in the `.github` folder. 
 
 📌 **Live Demo:**
-- See the project live from [here](https://obibaadoma.github.io/To-Do-List/)
+- See the project live from [here](https://obibaadoma.github.io/To-Do-List/dist/)
 
 📌 **Tech Stack:**
 - Page strucutre is built with `HTML5`
@@ -65,7 +65,13 @@ You can easily download or fork this repository and work on it immadiately!
 - No prior requirements needed!
 
 📌 **Setup:**
-- Simply download or fork this repository.
+To get a local copy up and running follow these simple example steps.
+
+Open terminal
+Change the directory you want put the repo
+Then run:
+ i. https://obibaadoma.github.io/To-Do-List/dist/ 
+ii. cd repo-name/
 
 📌 **Deployment:**
 - You can deploy this project by uploading three files (`index.html` / `style.css` / `script.js`) to a live server.
