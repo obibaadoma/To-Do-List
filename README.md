@@ -33,7 +33,7 @@ This project is about building a book management app. It contains three main fil
 It also includes some config linters for (`HTML` / `CSS3` / `JavaScript`) in the `.github` folder. 
 
 📌 **Live Demo:**
-- See the project live from [here](https://github.com/obibaadoma/To-Do-List)
+- See the project live from [here](https://obibaadoma.github.io/To-Do-List/)
 
 📌 **Tech Stack:**
 - Page strucutre is built with `HTML5`
