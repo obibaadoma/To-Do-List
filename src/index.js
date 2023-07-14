@@ -1,23 +1,27 @@
+/* eslint-disable */
+import _ from 'lodash';
+/* eslint-enable */
 import './style.css';
-import Todo from './modules/todo.js';
-import {
-  desc,
-  form,
-  refresh,
-} from './modules/element.js';
+import { addList, displayList } from './modules/user.js';
+import clearCompleted from './modules/clearAll.js';
+import localGet from './modules/localStorage.js';
 
-const todo1 = new Todo();
+const form = document.querySelector('.list-con');
+const todoTask = document.getElementById('input');
+const clearAll = document.getElementById('Completedbtn');
 
-todo1.renderPage();
-
-desc.addEventListener('keypress', (e) => {
-  if (e.key === 'Enter' && desc.value !== '') {
-    todo1.addTodo();
-    e.preventDefault();
-    form.reset();
-  }
+window.addEventListener('load', () => {
+  displayList();
 });
 
-const load = () => window.location.reload();
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  addList(todoTask.value, false, localGet().length + 1);
+  displayList();
+});
 
-refresh.addEventListener('click', load);
+clearAll.addEventListener('click', (e) => {
+  e.preventDefault();
+  clearCompleted();
+  displayList();
+});
