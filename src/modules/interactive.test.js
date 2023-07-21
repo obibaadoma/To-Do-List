@@ -1,7 +1,6 @@
 /**
  * @jest-environment jsdom
  */
-
 const { toggleTaskComplete, removeAllCompleted } = require('./interactive');
 const { mockStorage } = require('./modules/mockStorage');
 const { traverseTasks } = require('./DOM');
