@@ -12,8 +12,6 @@ import { edit } from './Modules/edit';
 
 let list = [];
  
-
-
 export function populate() {
   const itemList = document.querySelector('.list-items');
   const item = document.querySelector('.item-input');

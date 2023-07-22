@@ -85,6 +85,7 @@
   text-decoration: line-through;
   color: rgb(107, 250, 107);
   background-color: rgb(252, 252, 113);
+  font-style: normal;
 }
 
 .check {
