@@ -89,6 +89,11 @@ ii. cd repo-name/
 - [Twitter](https://twitter.com/mobibaadoma)
 - [LinkedIn](https://www.linkedin.com/in/derek-akrasi-konadu-187453151/)
 
+📌 **Jose:**
+- [GitHub](https://github.com/jlberbesi)
+- [Twitter](https://twitter.com/imberbesi)
+- [LinkedIn](https://www.linkedin.com/in/jlberbesi/)
+
 <p align="right"><a href="#title">back to top</a></p>
 
 <!-- FUTURE -->
