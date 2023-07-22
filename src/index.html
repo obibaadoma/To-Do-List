@@ -2,28 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
-    <title>To-do-list App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>To Do List App</title>
 </head>
 <body>
-    <section>
-        <div class="todolist-con">
-            <h1 class="todo-header">My To Do List</h1>
-            
-                <div class="head"><p>Today's to do</p><i class="fa-sharp fa-solid fa-arrows-rotate"></i></div>
-
-            <form action="submit" class="list-con">
-                <input type="text" name="text" class="input" id="input" placeholder="Add to your list....">
-                <button type="submit" id="added"><i class="add">add</i></button> 
-            </form>
-            
-            <div id="listItem"></div>
-            <div class="btn-con">
-                <button type="submit" id="Completedbtn" class="Completedbtn">Clear Completed Tasks</button>
-            </div>
-        </div>
-    </section>
+<section class="to_do-container">
+    <div class="header">
+        <h4>Today's To Do List  <span class="refresh"><i class="refresh fa">&#xf021;</i></span></h4>
+    </div>
+    <div class="add_item">
+        <input class="item-input"  type="text" placeholder="Add to your list"><span class="enter"><i id="enter" class="enter fa">&#xf112;</i></span>
+    </div>
+    <div class="list-items"> 
+    </div>
+    <div class="remove-all">
+        <button class="clear" type="button">Clear all completed</button>
+    </div>
+</section>
 </body>
 </html>

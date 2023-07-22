@@ -1,117 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-  background-color: rgb(200, 215, 255);
-  font-family: "Quicksand", sans-serif;
-  color: rgb(4, 32, 68);
-}
-
-section {
+.to_do-container {
+  width: 40%;
+  height: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  min-height: 50vh;
+  box-shadow: 1px 1px 10px 1px black;
+  margin: 100px auto;
 }
 
-.todo-header {
-  font-weight: 500;
+.header,
+.add_item {
+  border-bottom: 1px solid lightgray;
+  padding: 15px;
 }
 
-.todolist-con {
-  background-color: white;
-  width: 65%;
-  padding: 50px;
-  text-align: center;
-  margin-top: 40px;
-}
-
-.head {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-.list-con {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-
-form .input {
+.add_item input {
   width: 100%;
-  padding: 10px 10px;
+  height: 30px;
   border: none;
-  border-bottom: 1px solid rgb(104, 104, 104);
-}
-
-form .input::placeholder {
-  color: rgb(102, 102, 102);
-  font-size: 1.2em;
-  font-family: "Quicksand", sans-serif;
+  font-size: 17px;
   font-style: italic;
-  opacity: 0.7;
 }
 
-form .input:focus {
-  outline: none;
-}
-
-.findInput {
-  width: 100%;
-  border: none;
-}
-
-.findInput:focus {
-  outline: none;
-}
-
-.Completedbtn {
-  width: 100%;
-  margin-top: 10px;
-  padding: 8px;
+.refresh,
+.delete,
+.enter,
+.menu {
+  float: right;
+  margin-right: 3px;
+  font-size: 16px;
   cursor: pointer;
 }
 
-.checkbox-con {
-  display: flex;
-  align-items: center;
-  gap: 9px;
+.hide {
+  display: none;
 }
 
-.btn-con {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.color {
+  background-color: rgb(252, 252, 113);
 }
 
-.ul-items {
+.list-items li input {
+  margin-right: 10px;
+}
+
+.add_item input:focus {
+  outline: none;
+}
+
+.add_item input::placeholder {
+  font-style: italic;
+  font-size: 18px;
+  padding: 2px;
+}
+
+.list-items li {
+  border-bottom: 1px solid lightgray;
+  padding: 15px;
   list-style: none;
+  font-size: 18px;
+  font-weight: 400;
 }
 
-.list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-  padding: 0 7px;
+.remove-all {
+  text-align: center;
 }
 
-.toDoItem {
-  display: flex;
-  justify-content: space-between;
-}
-
-.add {
+.remove-all button {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
   cursor: pointer;
 }
 
-.delete {
+.finished {
+  text-decoration: line-through;
+  color: rgb(107, 250, 107);
+  background-color: rgb(252, 252, 113);
+}
+
+.check {
   cursor: pointer;
+}
+
+.txt {
+  user-select: none;
+}
+
+.clear:hover {
+  text-decoration: underline;
 }

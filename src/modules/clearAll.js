@@ -1,20 +1,15 @@
-import localGet from './localStorage.js';
+import { save } from "./save";
 
-const clearCompleted = () => {
-  let incompleted = localGet().filter((item) => {
-    if (!item.completed) {
-      return item;
-    }
-    return null;
+export const clearAll = (list) => {
+  const clear = document.querySelector('.clear');
+  clear.addEventListener('click', (e) => {
+    e.preventDefault()
+    const completedTasks = list.filter((task) => task.completed === true);
+    completedTasks.forEach((completedTask) => {
+      const index = list.indexOf(completedTask);
+      list.splice(index, 1);
+    });
+    save(list);
+    location.reload();
   });
-
-  incompleted = incompleted.map((item, id) => {
-    item.index = id + 1;
-    return item;
-  });
-
-  localStorage.setItem('listStorage', JSON.stringify(incompleted));
-  window.location.reload();
 };
-
-export default clearCompleted;

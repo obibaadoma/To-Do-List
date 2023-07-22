@@ -1,4 +1,4 @@
-export default class ListTemplate {
+export class Items {
   constructor(description, completed, index) {
     this.description = description;
     this.completed = completed;
